@@ -1,0 +1,14 @@
+.translated-content {
+}
+
+#custom-translated-content:not(:lang(en)) {
+  display: none;
+}
+
+html:lang(zh-tw) #custom-translated-content:lang(zh-tw) {
+  display: block;
+}
+
+html:lang(zh-tw) #custom-translated-content:not(:lang(zh-tw)) {
+  display: none;
+}
