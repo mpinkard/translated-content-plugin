@@ -39,6 +39,17 @@ function translateTitles() {
         a.innerHTML = titleTranslations[key];
       }
     }
+    const mainLinks = document.getElementsByClassName('main-link');
+    for (let i = 0; i < mainLinks.length; i++) {
+      const mainLink = mainLinks[i];
+      const titles = mainLink.getElementsByClassName('title');
+      for (let j = 0; j < titles.length; j++) {
+        const link = titles[j];
+        if (link.getAttribute('data-topic-id') && link.getAttribute('data-topic-id') === key) {
+          link.innerHTML = titleTranslations[key];
+        }
+      }
+    }
   }
 }
 
