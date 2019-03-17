@@ -19,6 +19,7 @@ function setLanguageToLocale(locale) {
   const englishLanguageCode = 'en';
   if (locale.startsWith('zh')) {
     document.getElementsByTagName('html')[0].setAttribute('lang', chineseLanguageCode);
+    window.onload = translateTitles;
   } else {
     // If anyone comes in with any other language codes, fallback to English
     document.getElementsByTagName('html')[0].setAttribute('lang', englishLanguageCode);
@@ -48,7 +49,6 @@ function initializeTranslatedContent(api) {
   } else {
     setLanguageFromHtml(getNavigatorLanguage());
   }
-  window.onload = translateTitles;
 }
 
 export default {
