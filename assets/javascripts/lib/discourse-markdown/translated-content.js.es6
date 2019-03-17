@@ -6,8 +6,8 @@ registerOption((siteSettings, opts) => {
 
 export function setup(helper) {
   helper.whiteList([
-    'p[id=custom-translated-content]',
-    'p[lang=en]',
-    'p[lang=zh-tw]',
+    'div[id=custom-translated-content]',
+    'div[lang=en]',
+    'div[lang=zh-tw]',
   ]);
 }
