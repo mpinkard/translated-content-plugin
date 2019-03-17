@@ -1,6 +1,6 @@
 # name: TranslatedContent
-# about:
-# version: 0.1.3
+# about: For SF Hep-B Free Discourse instance
+# version: 0.1.4
 # authors: mpinkard
 # url: https://github.com/mpinkard
 
