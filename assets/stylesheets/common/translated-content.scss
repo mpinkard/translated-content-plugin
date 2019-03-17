@@ -10,14 +10,12 @@ html:lang(zh-tw) #custom-translated-content:not(:lang(zh-tw)) {
   display: none;
 }
 
-.title[href^="/t/welcome-to-the-sf-hep-b-free-online-support-group/8"]:lang(zh-tw),
-.fancy-title[href^="/t/welcome-to-the-sf-hep-b-free-online-support-group/8"]:lang(zh-tw) {
+.title[href^="/t/welcome-to-discourse/7"]:lang(zh-tw), .fancy-title[href^="/t/welcome-to-discourse/7"]:lang(zh-tw) {
     visibility: hidden;
     position: relative;
 }
 
-.title[href^="/t/welcome-to-the-sf-hep-b-free-online-support-group/8"]:lang(zh-tw):after,
-.fancy-title[href^="/t/welcome-to-the-sf-hep-b-free-online-support-group/8"]:lang(zh-tw):after {
+.title[href^="/t/welcome-to-discourse/7"]:lang(zh-tw):after, .fancy-title[href^="/t/welcome-to-discourse/7"]:lang(zh-tw):after {
     visibility: visible;
     position: absolute;
     top: 0;
