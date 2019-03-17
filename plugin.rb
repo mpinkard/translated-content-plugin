@@ -1,6 +1,6 @@
 # name: TranslatedContent
 # about:
-# version: 0.1
+# version: 0.1.1
 # authors: mpinkard
 # url: https://github.com/mpinkard
 
