@@ -24,7 +24,7 @@ function setLanguageToLocale(locale) {
 const onClickFunction = (lang) => (event) => {
   event.preventDefault();
   document.cookie = `custom_translation_locale=${lang}`;
-  location.reload();
+  location.reload(true);
   return false;
 }
 
