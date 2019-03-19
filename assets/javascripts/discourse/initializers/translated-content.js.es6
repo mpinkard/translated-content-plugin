@@ -21,12 +21,40 @@ function setLanguageToLocale(locale) {
   }
 }
 
+const onClickFunction = (lang) => (event) => {
+  event.preventDefault();
+  document.cookie = `custom_translation_locale=${lang}`;
+  location.reload();
+  return false;
+}
+
+const languages = { 'English': 'en', 'Chinese': 'zh_TW' };
+
+function getCookie(name) {
+  var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+  return v ? v[2] : null;
+}
+
 function initializeTranslatedContent(api) {
   const currentUser = api.getCurrentUser();
-  if (currentUser) {
+  const cookieLang = getCookie('custom_translation_locale');
+  if (cookieLang) {
+    setLanguageToLocale(cookieLang);
+  } else if (I18n.currentLocale()) {
     setLanguageToLocale(I18n.currentLocale());
   } else {
-    setLanguageToLocale(getNavigatorLanguage());
+    setLanguageToLocale('en');
+  }
+  window.onload = () => {
+    const widgetLinks = document.querySelectorAll(`.widget-link`);
+    widgetLinks.forEach((node) => {
+      Object.keys(languages).forEach(language => {
+        const child = node.querySelector(`svg.d-icon-${language}`);
+        if (child) {
+          node.onclick = onClickFunction(languages[language]);
+        }
+      });
+    });
   }
 }
 
@@ -34,5 +62,5 @@ export default {
   name: "translated-content",
   initialize() {
     withPluginApi("0.8.29", initializeTranslatedContent);
-  } 
+  }
 };
