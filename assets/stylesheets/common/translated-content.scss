@@ -43,3 +43,7 @@ html:lang(zh-tw) #custom-translated-content:not(:lang(zh-tw)) {
   height:25px;  
   display:inline-block;
 }
+
+.pref-locale {
+  display: none;
+}
