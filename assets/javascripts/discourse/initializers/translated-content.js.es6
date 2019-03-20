@@ -1,14 +1,5 @@
 import { withPluginApi } from "discourse/lib/plugin-api";
 
-function getNavigatorLanguage() {
-  if (navigator.languages && navigator.languages.length) {
-    return navigator.languages[0];
-  } else {
-    // Fallback to English
-    return navigator.userLanguage || navigator.language || navigator.browserLanguage || 'en';
-  }
-}
-
 function setLanguageToLocale(locale) {
   // We want to use traditional characters, so let's use Taiwanese Chinese
   const chineseLanguageCode = 'zh-tw';
@@ -37,7 +28,6 @@ function getCookie(name) {
 }
 
 function initializeTranslatedContent(api) {
-  const currentUser = api.getCurrentUser();
   const cookieLang = getCookie('custom_translation_locale');
   if (cookieLang) {
     setLanguageToLocale(cookieLang);
