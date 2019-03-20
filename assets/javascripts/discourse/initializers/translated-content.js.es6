@@ -23,6 +23,7 @@ function setLanguageToLocale(locale) {
 
 const onClickFunction = (lang) => (event) => {
   event.preventDefault();
+  event.stopPropagation();
   document.cookie = `custom_translation_locale=${lang}`;
   location.reload(true);
   return false;
@@ -45,7 +46,7 @@ function initializeTranslatedContent(api) {
   } else {
     setLanguageToLocale('en');
   }
-  window.onload = () => {
+  api.onPageChange(() => {
     const widgetLinks = document.querySelectorAll(`.widget-link`);
     widgetLinks.forEach((node) => {
       Object.keys(languages).forEach(language => {
@@ -55,7 +56,7 @@ function initializeTranslatedContent(api) {
         }
       });
     });
-  }
+  });
 }
 
 export default {
