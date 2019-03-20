@@ -17,9 +17,15 @@ after_initialize do
   ApplicationController.class_eval do
     def set_locale
       locale_cookie = cookies[:custom_translation_locale]
-      if defined?(locale_cookie) and I18n.locale_available?(locale)
+      header_locale = locale_from_header
+      if locale_cookie and I18n.locale_available?(locale)
         I18n.locale = locale_cookie
-      else 
+      elsif header_locale
+        I18n.locale = header_locale
+        cookies[:custom_translation_locale] = {
+          :value => header_locale
+        }
+      else
         I18n.locale = :en
       end
       I18n.ensure_all_loaded!
