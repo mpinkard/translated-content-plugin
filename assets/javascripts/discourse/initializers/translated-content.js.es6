@@ -16,6 +16,9 @@ const onClickFunction = (lang) => (event) => {
   event.preventDefault();
   event.stopPropagation();
   document.cookie = `custom_translation_locale=${lang}`;
+
+  // Bypass the cache to avoid bugs for anonymous users
+  document.cookie = '_bypass_cache=true';
   location.reload(true);
   return false;
 }
@@ -29,6 +32,9 @@ function getCookie(name) {
 
 function initializeTranslatedContent(api) {
   const cookieLang = getCookie('custom_translation_locale');
+
+  // Don't bypass the cache unless the language is updated
+  document.cookie = '_bypass_cache=';
   if (cookieLang) {
     setLanguageToLocale(cookieLang);
   } else if (I18n.currentLocale()) {
