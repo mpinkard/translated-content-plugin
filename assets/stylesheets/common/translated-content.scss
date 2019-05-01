@@ -25,6 +25,147 @@ html:lang(zh-tw) #custom-translated-content:not(:lang(zh-tw)) {
     content: "歡迎來到舊金山無乙型肝炎的免費網上支挼小組";
 }
 
+.title[href^="/t/about-the-newly-diagnosed-category/13"]:lang(zh-tw),
+.fancy-title[href^="/t/about-the-newly-diagnosed-category/13"]:lang(zh-tw) {
+    visibility: hidden;
+    position: relative;
+}
+
+.title[href^="/t/about-the-newly-diagnosed-category/13"]:lang(zh-tw):after,
+.fancy-title[href^="/t/about-the-newly-diagnosed-category/13"]:lang(zh-tw):after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "B型肝炎診斷新數據";
+}
+
+
+.title[href^="/t/about-the-lost-a-loved-one-category/14"]:lang(zh-tw),
+.fancy-title[href^="/t/about-the-lost-a-loved-one-category/14"]:lang(zh-tw) {
+    visibility: hidden;
+    position: relative;
+}
+
+.title[href^="/t/about-the-lost-a-loved-one-category/14"]:lang(zh-tw):after,
+.fancy-title[href^="/t/about-the-lost-a-loved-one-category/14"]:lang(zh-tw):after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "當失去最親愛的人";
+}
+
+.title[href^="/t/about-the-general-questions-category/15"]:lang(zh-tw),
+.fancy-title[href^="/t/about-the-general-questions-category/15"]:lang(zh-tw) {
+    visibility: hidden;
+    position: relative;
+}
+
+.title[href^="/t/about-the-general-questions-category/15"]:lang(zh-tw):after,
+.fancy-title[href^="/t/about-the-general-questions-category/15"]:lang(zh-tw):after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "其他相關問題";
+}
+
+.title[href^="/t/general-resources/22"]:lang(zh-tw),
+.fancy-title[href^="/t/general-resources/22"]:lang(zh-tw) {
+    visibility: hidden;
+    position: relative;
+}
+
+.title[href^="/t/general-resources/22"]:lang(zh-tw):after,
+.fancy-title[href^="/t/general-resources/22"]:lang(zh-tw):after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "其他資源";
+}
+
+.title[href^="/t/our-partnering-organizations/23"]:lang(zh-tw),
+.fancy-title[href^="/t/our-partnering-organizations/23"]:lang(zh-tw) {
+    visibility: hidden;
+    position: relative;
+}
+
+.title[href^="/t/our-partnering-organizations/23"]:lang(zh-tw):after,
+.fancy-title[href^="/t/our-partnering-organizations/23"]:lang(zh-tw):after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "與我們合作的組織";
+}
+
+.title[href^="/t/introducing-our-moderators/21"]:lang(zh-tw),
+.fancy-title[href^="/t/introducing-our-moderators/21"]:lang(zh-tw) {
+    visibility: hidden;
+    position: relative;
+}
+
+.title[href^="/t/introducing-our-moderators/21"]:lang(zh-tw):after,
+.fancy-title[href^="/t/introducing-our-moderators/21"]:lang(zh-tw):after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "協會影響人物介紹";
+}
+
+.title[href^="/t/mark-lim-victim-at-age-30/65"]:lang(zh-tw),
+.fancy-title[href^="/t/mark-lim-victim-at-age-30/65"]:lang(zh-tw) {
+    visibility: hidden;
+    position: relative;
+}
+
+.title[href^="/t/mark-lim-victim-at-age-30/65"]:lang(zh-tw):after,
+.fancy-title[href^="/t/mark-lim-victim-at-age-30/65"]:lang(zh-tw):after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Mark Lim: 30歲患者";
+}
+
+.title[href^="/t/alan-wang-lets-talk-about-hep-b/63"]:lang(zh-tw),
+.fancy-title[href^="/t/alan-wang-lets-talk-about-hep-b/63"]:lang(zh-tw) {
+    visibility: hidden;
+    position: relative;
+}
+
+.title[href^="/t/alan-wang-lets-talk-about-hep-b/63"]:lang(zh-tw):after,
+.fancy-title[href^="/t/alan-wang-lets-talk-about-hep-b/63"]:lang(zh-tw):after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Alan Wang: 讓我們來談論有關B型肝炎";
+}
+
+.title[href^="/t/richard-hep-b-and-liver-cancer-advocate/61"]:lang(zh-tw),
+.fancy-title[href^="/t/richard-hep-b-and-liver-cancer-advocate/61"]:lang(zh-tw) {
+    visibility: hidden;
+    position: relative;
+}
+
+.title[href^="/t/richard-hep-b-and-liver-cancer-advocate/61"]:lang(zh-tw):after,
+.fancy-title[href^="/t/richard-hep-b-and-liver-cancer-advocate/61"]:lang(zh-tw):after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Richard - 倡導B型肝炎與肝癌知識";
+}
+
+.category-description:lang(zh-tw) {
+  visibility: hidden;
+  position: relative;
+}
+
 .d-icon-English{
   content: '';
   background:url("https://forum.sfhepbfree.org/uploads/default/original/1X/7d12d13824e44e4e0d44b583929c8b0bce1a6c01.png");
