@@ -161,6 +161,102 @@ html:lang(zh-tw) #custom-translated-content:not(:lang(zh-tw)) {
     content: "Richard - 倡導B型肝炎與肝癌知識";
 }
 
+.category-title-link[href^="/c/newly-diagnosed"]:lang(zh-tw) .category-name,
+.select-kit-header[data-value="5"]:lang(zh-tw) .category-name,
+.select-kit-row[data-value="5"]:lang(zh-tw) .category-name,
+.badge-wrapper[href^="/c/newly-diagnosed"]:lang(zh-tw) .category-name {
+  visibility: hidden;
+  position: relative;
+}
+
+.category-title-link[href^="/c/newly-diagnosed"]:lang(zh-tw) .category-name:after,
+.select-kit-header[data-value="5"]:lang(zh-tw) .category-name:after,
+.select-kit-row[data-value="5"]:lang(zh-tw) .category-name:after,
+.badge-wrapper[href^="/c/newly-diagnosed"]:lang(zh-tw) .category-name:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "B型肝炎診斷新數據";
+}
+
+.category-title-link[href^="/c/lost-loved-one"]:lang(zh-tw) .category-name,
+.select-kit-header[data-value="6"]:lang(zh-tw) .category-name,
+.select-kit-row[data-value="6"]:lang(zh-tw) .category-name,
+.badge-wrapper[href^="/c/lost-loved-one"]:lang(zh-tw) .category-name {
+  visibility: hidden;
+  position: relative;
+}
+
+.category-title-link[href^="/c/lost-loved-one"]:lang(zh-tw) .category-name:after,
+.select-kit-header[data-value="6"]:lang(zh-tw) .category-name:after,
+.select-kit-row[data-value="6"]:lang(zh-tw) .category-name:after,
+.badge-wrapper[href^="/c/lost-loved-one"]:lang(zh-tw) .category-name:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "當失去最親愛的人";
+}
+
+.category-title-link[href^="/c/general-questions"]:lang(zh-tw) .category-name,
+.select-kit-header[data-value="7"]:lang(zh-tw) .category-name,
+.select-kit-row[data-value="7"]:lang(zh-tw) .category-name,
+.badge-wrapper[href^="/c/general-questions"]:lang(zh-tw) .category-name {
+  visibility: hidden;
+  position: relative;
+}
+
+.category-title-link[href^="/c/general-questions"]:lang(zh-tw) .category-name:after,
+.select-kit-header[data-value="7"]:lang(zh-tw) .category-name:after,
+.select-kit-row[data-value="7"]:lang(zh-tw) .category-name:after,
+.badge-wrapper[href^="/c/general-questions"]:lang(zh-tw) .category-name:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "其他相關問題";
+}
+
+.category-title-link[href^="/c/meta"]:lang(zh-tw) .category-name,
+.select-kit-header[data-value="3"]:lang(zh-tw) .category-name,
+.select-kit-row[data-value="3"]:lang(zh-tw) .category-name,
+.badge-wrapper[href^="/c/meta"]:lang(zh-tw) .category-name {
+  visibility: hidden;
+  position: relative;
+}
+
+.category-title-link[href^="/c/meta"]:lang(zh-tw) .category-name:after,
+.select-kit-header[data-value="3"]:lang(zh-tw) .category-name:after,
+.select-kit-row[data-value="3"]:lang(zh-tw) .category-name:after,
+.badge-wrapper[href^="/c/meta"]:lang(zh-tw) .category-name:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "關於我們的網站";
+}
+
+.category-title-link[href^="/c/share-your-story"]:lang(zh-tw) .category-name,
+.select-kit-header[data-value="10"]:lang(zh-tw) .category-name,
+.select-kit-row[data-value="10"]:lang(zh-tw) .category-name,
+.badge-wrapper[href^="/c/meta"]:lang(zh-tw) .category-name
+{
+  visibility: hidden;
+  position: relative;
+}
+
+.category-title-link[href^="/c/share-your-story"]:lang(zh-tw) .category-name:after,
+.select-kit-header[data-value="10"]:lang(zh-tw) .category-name:after,
+.select-kit-row[data-value="10"]:lang(zh-tw) .category-name:after,
+.badge-wrapper[href^="/c/meta"]:lang(zh-tw) .category-name:after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "分享你的故事";
+}
+
 .category-description:lang(zh-tw) {
   display: none;
 }
