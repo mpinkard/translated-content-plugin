@@ -71,12 +71,15 @@ html:lang(zh-tw) #custom-translated-content:not(:lang(zh-tw)) {
     content: "其他相關問題";
 }
 
+
+.widget-link[href^="/t/general-resources/22"]:lang(zh-tw) .d-label,
 .title[href^="/t/general-resources/22"]:lang(zh-tw),
 .fancy-title[href^="/t/general-resources/22"]:lang(zh-tw) {
     visibility: hidden;
     position: relative;
 }
 
+.widget-link[href^="/t/general-resources/22"]:lang(zh-tw) .d-label:after,
 .title[href^="/t/general-resources/22"]:lang(zh-tw):after,
 .fancy-title[href^="/t/general-resources/22"]:lang(zh-tw):after {
     visibility: visible;
