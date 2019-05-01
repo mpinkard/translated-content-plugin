@@ -162,8 +162,7 @@ html:lang(zh-tw) #custom-translated-content:not(:lang(zh-tw)) {
 }
 
 .category-description:lang(zh-tw) {
-  visibility: hidden;
-  position: relative;
+  display: none;
 }
 
 .d-icon-English{
