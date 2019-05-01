@@ -240,7 +240,7 @@ html:lang(zh-tw) #custom-translated-content:not(:lang(zh-tw)) {
 .category-title-link[href^="/c/share-your-story"]:lang(zh-tw) .category-name,
 .select-kit-header[data-value="10"]:lang(zh-tw) .category-name,
 .select-kit-row[data-value="10"]:lang(zh-tw) .category-name,
-.badge-wrapper[href^="/c/meta"]:lang(zh-tw) .category-name
+.badge-wrapper[href^="/c/share-your-story"]:lang(zh-tw) .category-name
 {
   visibility: hidden;
   position: relative;
@@ -249,7 +249,7 @@ html:lang(zh-tw) #custom-translated-content:not(:lang(zh-tw)) {
 .category-title-link[href^="/c/share-your-story"]:lang(zh-tw) .category-name:after,
 .select-kit-header[data-value="10"]:lang(zh-tw) .category-name:after,
 .select-kit-row[data-value="10"]:lang(zh-tw) .category-name:after,
-.badge-wrapper[href^="/c/meta"]:lang(zh-tw) .category-name:after {
+.badge-wrapper[href^="/c/share-your-story"]:lang(zh-tw) .category-name:after {
   visibility: visible;
   position: absolute;
   top: 0;
