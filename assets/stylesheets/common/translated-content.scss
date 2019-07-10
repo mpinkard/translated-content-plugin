@@ -264,6 +264,10 @@ html:lang(zh-tw) #custom-translated-content:not(:lang(zh-tw)) {
   display: none;
 }
 
+.topic-excerpt:lang(zh-tw) {
+  display: none;
+}
+
 .d-icon-English{
   content: '';
   background:url("https://forum.sfhepbfree.org/uploads/default/original/1X/7d12d13824e44e4e0d44b583929c8b0bce1a6c01.png");
